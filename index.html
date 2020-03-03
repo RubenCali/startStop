@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ruben Cali">
+    <title>Start, Stop opdracht</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="opa.css">
+    <link rel="stylesheet" href="opa2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="titel">Verstreken tijd tussen start en stop knop.</h1>
+        <h1 id="counter"></h1>
+        <div class="buttons">
+        <button id="start" onclick="getUren(), getMinuten(), hide(), hide1()">Start</button>
+        <button class="stop" id="stop" onclick="getSec(), getMil(), show(), show1()">stop</button>
+       
+        </div>
+        <ul>
+            <li>Verstrekentijd: <strong><span id="uren">00</span>.<span id="minuten">00</span> - <span id="beginTijdSec">00</span>.<span id="beginTijdMil">00</span></strong> = <span id="antwoordSec">00</span>.<span id="antwoordMil">00</span></li>
+        </ul>
+        <p id="bereken" class="opa2" onclick="berekenSec(), berekenMil()">bereken antwoord</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
